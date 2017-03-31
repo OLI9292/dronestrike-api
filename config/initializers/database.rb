@@ -1,1 +1,1 @@
-Mongoid.load! "mongoid.config"
+Mongoid.load! 'config/initializers/mongoid.yml'
