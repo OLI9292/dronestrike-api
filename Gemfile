@@ -7,6 +7,7 @@ gem 'mongo'
 gem 'mongoid'
 gem 'puma'
 gem 'rack-cors'
+gem 'rake'
 gem 'sinatra', github: 'sinatra'
 
 gem 'spidey' # crawling and scraping web sites
