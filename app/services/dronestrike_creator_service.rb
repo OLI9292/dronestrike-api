@@ -23,7 +23,7 @@ module DronestrikeCreatorService
         if geocoded
           geocoded[:dronestrike] = dronestrike
           dronestrike.location = Location.create(geocoded)
-          puts "DronestrikeCreatorService -> Successfully geocoded #{strike[:name]}, #{geocoded.address}"
+          puts "DronestrikeCreatorService -> Successfully geocoded #{strike[:name]}, #{geocoded[:address]}"
         else
           puts "DronestrikeCreatorService -> Failed to geocode #{strike[:name]}, #{location}"
         end
