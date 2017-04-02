@@ -11,7 +11,6 @@ gem 'rake'
 gem 'sinatra', github: 'sinatra'
 
 gem 'spidey' # crawling and scraping web sites
+gem 'geocoder'
 
-group :development, :test do
-  gem 'byebug'
-end
+gem 'byebug'  

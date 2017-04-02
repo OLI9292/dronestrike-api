@@ -15,9 +15,8 @@ module SpiderService
       spider = spider.new request_interval: 0.5
       spider.crawl
       spider_name = spider.class.name.underscore
-      spider_results = spider.results
-      if spider_results
-        AggregationUploadService.call spider_name, spider_results
+      if spider.results
+        DronestrikeCreatorService.call spider_name, spider.results
       else
         puts "SpiderService -> #{spider_name} failed to return results"
       end

@@ -37,7 +37,7 @@ class Afghanistan2017 < Spidey::AbstractSpider
   def clean(data)
     data[:name] = data[:name]&.gsub('link', '')&.strip
     data[:type] = data[:type]&.gsub('Type of strike:', '')&.strip
-    data[:location] = data[:location]&.gsub('Location:', '')&.strip
+    data[:location] = data[:location]&.gsub('Location:', '')&.strip&.split(', ')&.last
     data[:references] = data[:references]&.gsub('References:', '')&.strip
     stats = data[:stats]&.split('; ')
     killed = stats.find { |s| s =~ /killed/ }

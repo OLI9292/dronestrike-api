@@ -32,6 +32,7 @@ GEM
     byebug (9.0.6)
     domain_name (0.5.20170223)
       unf (>= 0.0.5, < 1.0.0)
+    geocoder (1.4.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.8.1)
@@ -85,6 +86,7 @@ DEPENDENCIES
   activerecord (~> 4.2.0)
   bson_ext
   byebug
+  geocoder
   mongo
   mongoid
   puma

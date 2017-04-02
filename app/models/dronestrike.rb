@@ -1,11 +1,12 @@
 class Dronestrike  
   include Mongoid::Document
 
+  embeds_one :location
+
   field :date, type: String
   field :description, type: String
   field :injured, type: String
   field :killed, type: String
-  field :location, type: String
   field :name, type: String
   field :references, type: String
   field :type, type: String
